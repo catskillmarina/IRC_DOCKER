@@ -15,7 +15,7 @@ RUN apt-get update && \
                        zlib1g \
                        zlib1g-dev \
                        zlibc \
-                       libgcrypt11-dev \
+                       libgcrypt20-dev \
                        supervisor && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
