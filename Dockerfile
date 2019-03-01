@@ -21,19 +21,19 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN useradd -m ircd 
-COPY unrealircd-4.2.0.tar.gz /home/ircd/
+COPY unrealircd-4.2.1.1.tar.gz /home/ircd/
 RUN cd /home/ircd/ && \
-    tar xzvf unrealircd-4.2.0.tar.gz && \
+    tar xzvf unrealircd-4.2.1.1.tar.gz && \
     mkdir /home/ircd/unrealircd/ && \
     chown -R ircd:ircd /home/ircd/ 
 
-COPY config.settings /home/ircd/unrealircd-4.2.0
+COPY config.settings /home/ircd/unrealircd-4.2.1.1
 
-RUN cd /home/ircd/unrealircd-4.2.0 && \
+RUN cd /home/ircd/unrealircd-4.2.1.1 && \
     ./Config && \
     make && \
     make install && \
-    rm -rf /home/ircd/unrealircd-4.2.0
+    rm -rf /home/ircd/unrealircd-4.2.1.1
 
 COPY supervisord.conf /etc/supervisord.conf
 COPY unrealircd.conf /home/ircd/unrealircd/conf/unrealircd.conf
