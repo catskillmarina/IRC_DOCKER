@@ -8,3 +8,6 @@ Todo
 ----
 Add python install to Dockerfile
 Add python stem install to Dockerfile
+
+Consider adding support for obfs4 bridges to the torrc - might be better
+than vanguards
