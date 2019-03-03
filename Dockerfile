@@ -50,7 +50,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 CMD ["/usr/bin/supervisord -c /etc/supervisord.conf"]
 
-EXPOSE 6697
-EXPOSE 6667
-EXPOSE 7000
+#EXPOSE 6697
+#EXPOSE 6667
+#EXPOSE 7000
 

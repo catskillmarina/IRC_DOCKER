@@ -4,32 +4,35 @@ SETUP DIRECTIONS
 READ README.md
 
 
-Run prepare.sh in THIS directory - that fetches things for you.
-
-ONLY PROCEED if YOU GET A GOOD SIGNATURE !
-ONLY PROCEED if YOU GET A GOOD SIGNATURE !
-ONLY PROCEED if YOU GET A GOOD SIGNATURE !
-ONLY PROCEED if YOU GET A GOOD SIGNATURE !
-
 install docker
 install docker-compose
 
-copy unrealircd.conf.SAMPLE or unrealircd.conf.SUGGESTED 
-                            to unrealircd.conf -- YOU MUST EDIT THIS FILE !!
+copy SAMPLE/unrealircd.conf.SAMPLE or SAMPLE/unrealircd.conf.SUGGESTED 
+                          to ./unrealircd.conf -- YOU MUST EDIT THIS FILE !!
                                                   --------------------------
+Don't move the SAMPLE files, copy them. The prepare script does some 
+reasonability checking.
 
 
 you may want to edit ircd.motd and or 
                      ircd.rules for your particular application.
 
-copy torrc.SAMPLE to torrc -- YOU MUST EDIT THIS FILE !!
-                              --------------------------
+copy SAMPLE/torrc.SAMPLE or SAMPLE/torrc.SUGGESTED to ./torrc -- 
+                                                 YOU MUST EDIT THIS FILE !!
+                                                 --------------------------
 
 IMPORTANT
 ---------
 If you are running more than one of these images on the same Docker setup
 you will need to edit docker-compose.yml to change tor-ircd to a unique value !
                  -----------------------           --------
+
+Run prepare.sh in THIS directory - that fetches things for you.
+
+ONLY PROCEED if YOU GET A GOOD SIGNATURE and NO ERRORS !
+ONLY PROCEED if YOU GET A GOOD SIGNATURE and NO ERRORS !
+ONLY PROCEED if YOU GET A GOOD SIGNATURE and NO ERRORS !
+ONLY PROCEED if YOU GET A GOOD SIGNATURE and NO ERRORS !
 
 # Run the following commands
 ----------------------------

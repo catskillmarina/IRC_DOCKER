@@ -4,11 +4,14 @@ services:
   tor-ircd:
     build: .
     command: /usr/bin/supervisord -c /etc/supervisord.conf
-    ports:
-     - "6697:6697"
-     - "6667:6667"
-     - "7000:7000"
     restart: always
     volumes:
       - ./torlib:/var/lib/tor/
+      - ./varlog:/var/log/
 
+# Removed from after command: No ports need exposing
+# Tor does it all
+#    ports:
+#     - "6697:6697"
+#     - "6667:6667"
+#     - "7000:7000"

@@ -1,0 +1,10 @@
+https://riseup.net/en/security/network-security/tor/onionservices-best-practices
+https://blog.torproject.org/announcing-vanguards-add-onion-services
+https://github.com/mikeperry-tor/vanguards
+https://stem.torproject.org/download.html
+https://stem.torproject.org/
+
+Todo
+----
+Add python install to Dockerfile
+Add python stem install to Dockerfile
